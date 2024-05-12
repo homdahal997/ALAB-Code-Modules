@@ -1,18 +1,19 @@
-# SBA 308: JavaScript Fundamentals
+# ALAB 308A.5.1: Code Modules
 
+# Project: Modularizing Pre-existing Code
 
-## Introduction
-This app facilitates the assessment of learners' understanding of fundamental JavaScript concepts and their ability to apply these concepts practically. The assessment encourages creativity in project development while emphasizing the demonstration of proficiency in specific topics. I have creatively completed this fundamental javascript project.
+This project aims to modularize pre-existing code for better organization and future use. We will be using pre-existing code from previous projects and reorganize them into module files.
 
-## Overview
-- This app is designed to process learner submissions for assignments within the "Introduction to JavaScript" course. It calculates adjusted scores based on submission dates and due dates, and generates learner data including total scores, total possible points, and individual assignment scores.
+## Getting Started
 
-## Important Notes
-- Ensure that the provided data (CourseInfo, AssignmentGroup, and LearnerSubmissions) are correctly formatted and up-to-date.
-- Pay attention to any error messages logged during execution, as they may indicate issues with data or processing logic.
+The starting point for this project is [this repository](https://github.com/homdahal997/SBA-JavaScript-fundamentals).
 
-## Usage 
--Any one can clone or for this git repo to learn different concepts like use of let and const, creating functions, using object to manupulate data and many more. 
+## Modularizing Code
 
-## Initial plant for this project
-![Initial Plan](308SBA_Planjs.png)
+In this project, we have modularized the `app.js` file by breaking it down into several functions. These functions are `isFutureDate.js`, `adjustScore.js`, `initializeLearner.js`, and `getLearnerData.js`. 
+
+The first three functions (`isFutureDate.js`, `adjustScore.js`, `initializeLearner.js`) utilize default export and are imported into the `getLearnerData.js` file. 
+
+Following this, the `getLearnerData.js` file, which also uses default export, is imported back into the `app.js` file to run the program. 
+
+Through this process, we have achieved a modularized program that is cleaner and easier to maintain.
